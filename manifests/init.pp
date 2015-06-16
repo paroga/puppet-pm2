@@ -17,8 +17,6 @@ class pm2(
 {
 
   $install_path = "${install_root}/${install_dir}"
-  
-  class { '::nodejs': }
 
   group { $deamon_user:
     ensure  => present,
